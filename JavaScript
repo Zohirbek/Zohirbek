@@ -1,0 +1,14 @@
+document.getElementById('nftForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const nftName = document.getElementById('nftName').value;
+    const nftDescription = document.getElementById('nftDescription').value;
+    
+    const output = `
+        <h3>Sizning NFT'ingiz:</h3>
+        <p><strong>Nomi:</strong> ${nftName}</p>
+        <p><strong>Tavsifi:</strong> ${nftDescription}</p>
+    `;
+    
+    document.getElementById('nftOutput').innerHTML = output;
+});
