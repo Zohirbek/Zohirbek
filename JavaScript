@@ -12,3 +12,19 @@ document.getElementById('nftForm').addEventListener('submit', function(event) {
     
     document.getElementById('nftOutput').innerHTML = output; // Natijani chiqarish
 });
+document.getElementById('nftForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formani yuborishni to'xtatish
+    
+    const nftName = document.getElementById('nftName').value;
+    const nftDescription = document.getElementById('nftDescription').value;
+    const nftImage = document.getElementById('nftImage').value;
+    
+    const output = `
+        <h3>Sizning NFT'ingiz:</h3>
+        <p><strong>Nomi:</strong> ${nftName}</p>
+        <p><strong>Tavsifi:</strong> ${nftDescription}</p>
+        <img src="${nftImage}" alt="${nftName}" style="width: 200px; height: auto;">
+    `;
+    
+    document.getElementById('nftOutput').innerHTML = output; // Natijani chiqarish
+});
