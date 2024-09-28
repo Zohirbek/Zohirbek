@@ -40,15 +40,6 @@ h2 {
     color: #333;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 section {
     margin-bottom: 20px;
 }
@@ -78,4 +69,14 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
