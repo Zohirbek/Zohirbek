@@ -6,17 +6,14 @@
     <title>MXNFT - NFT Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="new_script.js"></script>
-<link rel="stylesheet" href="style.css">
-    <body>
-   <script src="new_script.js"></script>
-<link rel="stylesheet" href="style.css">
-        <header>
+<body>
+    <header>
         <h1>MXNFT</h1>
         <nav>
             <ul>
                 <li><a href="#about">Biz haqimizda</a></li>
                 <li><a href="#collection">Kolleksiya</a></li>
+                <li><a href="#nft-generator">NFT Generator</a></li>
                 <li><a href="#contact">Aloqa</a></li>
             </ul>
         </nav>
@@ -32,6 +29,21 @@
             <h2>Kolleksiya</h2>
             <p>Kolleksiyamizda turli xil san'at asarlari va raqamli aktivlar mavjud. Har bir NFT o'ziga xos va noyob.</p>
         </section>
+
+        <section id="nft-generator">
+            <h2>NFT Generator</h2>
+            <p>O'z NFT'ingizni yaratish uchun quyidagi maydonlarni to'ldiring:</p>
+            <form id="nftForm">
+                <label for="nftName">NFT Nomi:</label>
+                <input type="text" id="nftName" name="nftName" required>
+                
+                <label for="nftDescription">NFT Tavsifi:</label>
+                <textarea id="nftDescription" name="nftDescription" required></textarea>
+                
+                <button type="submit">Yaratish</button>
+            </form>
+            <div id="nftOutput"></div>
+        </section>
         
         <section id="contact">
             <h2>Aloqa</h2>
@@ -42,19 +54,8 @@
     <footer>
         <p>&copy; 2024 MXNFT. Barcha huquqlar himoyalangan.</p>
     </footer>
+
+    <script src="new_script.js"></script> <!-- JavaScript fayli -->
 </body>
-          </html>
-<section id="nft-generator">
-    <h2>NFT Generator</h2>
-    <p>O'z NFT'ingizni yaratish uchun quyidagi maydonlarni to'ldiring:</p>
-    <form id="nftForm">
-        <label for="nftName">NFT Nomi:</label>
-        <input type="text" id="nftName" name="nftName" required>
-        
-        <label for="nftDescription">NFT Tavsifi:</label>
-        <textarea id="nftDescription" name="nftDescription" required></textarea>
-        
-        <button type="submit">Yaratish</button>
-    </form>
-    <div id="nftOutput"></div>
-</section>
+    </html>
+                
