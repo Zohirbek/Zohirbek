@@ -44,7 +44,24 @@
             </form>
             <div id="nftOutput"></div>
         </section>
+<section id="nft-generator">
+    <h2>NFT Generator</h2>
+    <p>O'z NFT'ingizni yaratish uchun quyidagi maydonlarni to'ldiring:</p>
+    <form id="nftForm">
+        <label for="nftName">NFT Nomi:</label>
+        <input type="text" id="nftName" name="nftName" required>
         
+        <label for="nftDescription">NFT Tavsifi:</label>
+        <textarea id="nftDescription" name="nftDescription" required></textarea>
+        
+        <label for="nftImage">NFT Rasm URL:</label>
+        <input type="url" id="nftImage" name="nftImage" required>
+        
+        <button type="submit">Yaratish</button>
+    </form>
+    <div id="nftOutput"></div>
+    </section>
+    
         <section id="contact">
             <h2>Aloqa</h2>
             <p>Biz bilan bog'lanish uchun <a href="mailto:info@mynft.com">info@mynft.com</a> manziliga yozing.</p>
