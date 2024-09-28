@@ -12,3 +12,23 @@ document.getElementById('nftForm').addEventListener('submit', function(event) {
     
     document.getElementById('nftOutput').innerHTML = output;
 });
+function showLanguage(language) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.style.display = 'none'; // Barcha bo'limlarni yashirish
+    });
+
+    const selectedSection = document.getElementById(language);
+    if (selectedSection) {
+        selectedSection.style.display = 'block'; // Tanlangan bo'limni ko'rsatish
+    }
+}
+
+// Tillarni tanlash uchun alohida hodisa qo'shing
+document.querySelectorAll('ul li a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const language = this.getAttribute('href').substring(1);
+        showLanguage(language);
+    });
+});
